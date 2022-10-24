@@ -17,7 +17,18 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::middleware([
+
+//Por el momento esta asi, despues la arreglare con Controller.
+Route::get('/dash/clima', function(){
+    return view('climas.index');
+});
+
+
+Route::get('/dash','App\Http\Controllers\DashboardController@index');
+
+
+//Es una forma de acceder el dashboard yo usare los controller.
+/* Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
@@ -26,3 +37,4 @@ Route::middleware([
         return view('dash.index');
     })->name('dash');
 });
+ */
