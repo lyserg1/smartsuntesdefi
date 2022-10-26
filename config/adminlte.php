@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Smart Sunshine',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'use_ico_only' => false,
+    'use_ico_only' => true,
     'use_full_favicon' => false,
 
     /*
@@ -64,11 +64,11 @@ return [
     */
 
     'logo' => '<b>Smart Sunshine</b>',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo_img' => 'vendor/adminlte/dist/img/logosmartsun.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'Admin Logo',
+    'logo_img_alt' => 'Smart Sunshine',
 
     /*
     |--------------------------------------------------------------------------
@@ -134,7 +134,7 @@ return [
     'usermenu_header_class' => 'bg-primary',
     'usermenu_image' => false,
     'usermenu_desc' => false,
-    'usermenu_profile_url' => false,
+    'usermenu_profile_url' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -150,8 +150,8 @@ return [
 
     'layout_topnav' => null,
     'layout_boxed' => null,
-    'layout_fixed_sidebar' => null,
-    'layout_fixed_navbar' => null,
+    'layout_fixed_sidebar' => true,
+    'layout_fixed_navbar' => true,
     'layout_fixed_footer' => null,
     'layout_dark_mode' => null,
 
@@ -187,7 +187,7 @@ return [
     */
 
     'classes_body' => '',
-    'classes_brand' => '',
+    'classes_brand' => 'bg-dark',
     'classes_brand_text' => '',
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
@@ -259,7 +259,7 @@ return [
     'register_url' => 'register',
     'password_reset_url' => 'password/reset',
     'password_email_url' => 'password/email',
-    'profile_url' => false,
+    'profile_url' => 'false',
 
     /*
     |--------------------------------------------------------------------------
@@ -292,11 +292,6 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
-            'topnav_right' => false,
-        ],
-        [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
@@ -312,16 +307,55 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
+            'text'        => 'Dashboard',
+            'url'         => 'home',
+            'icon'        => 'fas fa-fw fa-home',
             'label_color' => 'success',
         ],
-        ['header' => 'Configuración de la Cuenta'],
         [
-            'text' => 'Perfil de Usuario',
-            'url'  => 'user/profile',
+
+            'text'        => 'Climas',
+            'url'         => 'admin/pages',
+            'icon'        => 'far fa-fw fa-file',
+            'label_color' => 'success',
+
+        ],
+        [
+
+            'text'        => 'Luz',
+            'url'         => 'admin/pages',
+            'icon'        => 'far fa-fw fa-file',
+            'label_color' => 'success',
+
+        ],
+        [
+
+            'text'        => 'Camaras',
+            'url'         => 'admin/pages',
+            'icon'        => 'far fa-fw fa-file',
+            'label_color' => 'success',
+
+        ],
+        [
+
+            'text'        => 'Ruidos',
+            'url'         => 'admin/pages',
+            'icon'        => 'far fa-fw fa-file',
+            'label_color' => 'success',
+
+        ],
+        [
+
+            'text'        => 'Estadisticas',
+            'url'         => 'admin/pages',
+            'icon'        => 'far fa-fw fa-file',
+            'label_color' => 'success',
+
+        ],
+        ['header' => 'Configuración de la cuenta'],
+        [
+            'text' => 'profile',
+            'url'  => 'admin',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
