@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClimaController;
 use App\Http\Controllers\PerfilController;
-
-
+use App\Http\Controllers\CamaraController;
+use App\Http\Controllers\RuidoController;
+use App\Http\Controllers\LuzController;
+use App\Http\Controllers\EstadisticaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,8 +36,18 @@ Route::get('/dash','App\Http\Controllers\DashboardController@index');
 
 Route::get('/clima','App\Http\Controllers\ClimaController@index');
 
+Route::get('/luz','App\Http\Controllers\LuzController@index');
+
+Route::get('/camara','App\Http\Controllers\CamaraController@index');
+
+Route::get('/ruido','App\Http\Controllers\RuidoController@index');
+
+Route::get('/estadistica','App\Http\Controllers\EstadisticaController@index');
+
 Route::get('/admin','App\Http\Controllers\PerfilController@index');
 
+
+//ESTAS FUERON otras rutas con las que intente, las de arriba estan ok
 /* Route::get('/clima',[ClimaController::class, 'index']); */
 
 /* Route::get('/profile','App\Http\Controllers\PerfilController@show');
@@ -56,3 +68,15 @@ Route::get('/admin','App\Http\Controllers\PerfilController@index');
     })->name('dash');
 });
  */
+
+ //Esta es la otra ruta que vi, la que parece que es la de actual laravel 8, pero estoy confundido.
+/**  Route::middleware([
+  *  'auth:sanctum',
+   * config('jetstream.auth_session'),
+   * 'verified'
+*])->group(function () {
+
+ *   Route::get('profile', function (){
+  *      return view('admin.profile');
+  *  })->name('profile');
+*}); */

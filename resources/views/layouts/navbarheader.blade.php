@@ -22,6 +22,8 @@
     <meta property="og:title" content="Simple Responsive Navigation Bar by chandrashekhar" />
     <meta property="og:description" content="Simple Responsive Navigation Bar" />
 
+    <meta property="og:image" content="http://tailwindcomponents.com/storage/7685/conversions/temp81017-ogimage.jpg?v=2022-10-26 05:24:35" />
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@TwComponents" />
     <meta name="twitter:title" content="Simple Responsive Navigation Bar by chandrashekhar" />
@@ -120,7 +122,7 @@ body {
             <span>SISTEMA</span>
           </a>
           <a
-            href="#"
+            href="/contacto"
             class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-gray-900 hover:text-white"
           >
             <span>CONTACTO</span>

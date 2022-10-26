@@ -134,7 +134,7 @@ return [
     'usermenu_header_class' => 'bg-primary',
     'usermenu_image' => false,
     'usermenu_desc' => false,
-    'usermenu_profile_url' => true,
+    'usermenu_profile_url' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -308,14 +308,14 @@ return [
         ],
         [
             'text'        => 'Dashboard',
-            'url'         => 'home',
+            'url'         => 'dash',
             'icon'        => 'fas fa-fw fa-home',
             'label_color' => 'success',
         ],
         [
 
             'text'        => 'Climas',
-            'url'         => 'admin/pages',
+            'url'         => 'clima',
             'icon'        => 'far fa-fw fa-file',
             'label_color' => 'success',
 
@@ -323,7 +323,7 @@ return [
         [
 
             'text'        => 'Luz',
-            'url'         => 'admin/pages',
+            'url'         => 'luz',
             'icon'        => 'far fa-fw fa-file',
             'label_color' => 'success',
 
@@ -331,7 +331,7 @@ return [
         [
 
             'text'        => 'Camaras',
-            'url'         => 'admin/pages',
+            'url'         => 'camara',
             'icon'        => 'far fa-fw fa-file',
             'label_color' => 'success',
 
@@ -339,7 +339,7 @@ return [
         [
 
             'text'        => 'Ruidos',
-            'url'         => 'admin/pages',
+            'url'         => 'ruido',
             'icon'        => 'far fa-fw fa-file',
             'label_color' => 'success',
 
@@ -347,23 +347,18 @@ return [
         [
 
             'text'        => 'Estadisticas',
-            'url'         => 'admin/pages',
+            'url'         => 'estadistica',
             'icon'        => 'far fa-fw fa-file',
             'label_color' => 'success',
 
         ],
         ['header' => 'Configuración de la cuenta'],
         [
-            'text' => 'profile',
+            'text' => 'Perfil de Usuario',
             'url'  => 'admin',
             'icon' => 'fas fa-fw fa-user',
         ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
+        /* [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
@@ -400,8 +395,8 @@ return [
                     'url'  => '#',
                 ],
             ],
-        ],
-        ['header' => 'labels'],
+        ], */
+        /* ['header' => 'labels'],
         [
             'text'       => 'important',
             'icon_color' => 'red',
@@ -416,7 +411,7 @@ return [
             'text'       => 'information',
             'icon_color' => 'cyan',
             'url'        => '#',
-        ],
+        ], */
     ],
 
     /*

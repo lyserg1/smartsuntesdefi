@@ -7,11 +7,11 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Climas</h1>
+    <h1>Perfil de Usuario</h1>
 @stop
 
 @section('content')
-    <p>Registros de Temperatura y Humedad.</p>
+    <p>Bienvenido al Perfil de Usuario aqui, puedes modificar tus datos.</p>
 
     <div>
         <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
