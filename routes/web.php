@@ -24,6 +24,7 @@ Route::get('/', function () {
 });
 
 
+
 //Por el momento esta asi, despues la arreglare con Controller.
 /* Route::get('/dash/clima', function(){
     return view('climas.index');
@@ -45,6 +46,18 @@ Route::get('/ruido','App\Http\Controllers\RuidoController@index');
 Route::get('/estadistica','App\Http\Controllers\EstadisticaController@index');
 
 Route::get('/admin','App\Http\Controllers\PerfilController@index');
+
+
+
+Route::get('/contacto', function () {
+    return view('contactoprueba.contacto');
+});
+
+
+
+/* Route::get('/contactanos', 'App\Http\Controllers\ContactoController@index'); */
+
+/* Route::get('/layouts/contacto', [ContactoController::class, 'index']); */
 
 
 //ESTAS FUERON otras rutas con las que intente, las de arriba estan ok
