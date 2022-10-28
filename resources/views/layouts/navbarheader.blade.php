@@ -105,6 +105,15 @@
     <meta name="twitter:image" content="http://tailwindcomponents.com/storage/6488/conversions/temp73285-ogimage.jpg?v=2022-10-27 06:32:55" />
 
 
+    <meta property="og:url" content="https://tailwindcomponents.com/component/qa-section/landing" />
+    <meta property="og:title" content="Q&amp;A section by khatabwedaa" />
+    <meta property="og:description" content="Q&amp;A section form https://merakiui.com/components" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TwComponents" />
+    <meta name="twitter:title" content="Q&amp;A section by khatabwedaa" />
+    <meta name="twitter:description" content="Q&amp;A section form https://merakiui.com/components" />
+    <meta name="twitter:image" content="http://tailwindcomponents.com/storage/6714/conversions/temp99482-ogimage.jpg?v=2022-10-28 06:15:59" />
 
 
     <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">

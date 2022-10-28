@@ -193,6 +193,62 @@
         </div>
     </div>
 
+    <section class="bg-gray-900 dark:bg-gray-900">
+        <div class="container max-w-4xl px-6 py-10 mx-auto">
+            <h1 class="text-4xl font-semibold text-center text-gray-800 dark:text-white">QUIENES SOMOS</h1>
+
+            <div class="mt-12 space-y-8">
+                <div class="border-2 border-gray-100 rounded-lg dark:border-gray-700">
+                    <button class="flex items-center justify-between w-full p-8">
+                        <h1 class="font-semibold text-white dark:text-white">SOMOS TECHNO INVEST</h1>
+
+
+                    </button>
+
+                    <hr class="border-gray-200 dark:border-white">
+
+                    <p class="p-8 text-sm text-white">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?
+                    </p>
+                </div>
+
+
+                <div class="border-2 border-gray-100 rounded-lg dark:border-gray-700">
+                    <button class="flex items-center justify-between w-full p-8">
+                        <h1 class="font-semibold text-white dark:text-white">NUESTRA MISIÓN</h1>
+
+
+                    </button>
+
+                    <hr class="border-gray-200 dark:border-white">
+
+                    <p class="p-8 text-sm text-white">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?
+                    </p>
+                </div>
+
+                <div class="border-2 border-gray-100 rounded-lg dark:border-gray-700">
+                    <button class="flex items-center justify-between w-full p-8">
+                        <h1 class="font-semibold text-white dark:text-white">NUESTRA VISIÓN</h1>
+
+
+                    </button>
+
+                    <hr class="border-gray-200 dark:border-white">
+
+                    <p class="p-8 text-sm text-white">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?
+                    </p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
     <center>
 
         <h1 class="text-gray-800 text-5xl font-semibold mt-20 mb-10">
