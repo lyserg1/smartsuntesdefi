@@ -18,6 +18,12 @@ class ClimaController extends Controller
     }
 
 
+    //aqui estaba mi problema esa ruta malditaaaaaa
+    public function mostrarclima(){
+
+    return view('clima.mostrarclima');
+
+    }
 
 
 }

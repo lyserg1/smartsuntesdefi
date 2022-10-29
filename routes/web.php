@@ -47,7 +47,9 @@ Route::get('/estadistica','App\Http\Controllers\EstadisticaController@index');
 
 Route::get('/admin','App\Http\Controllers\PerfilController@index');
 
+/* Route::get('/clima','App\Http\Controllers\ClimaController@mostrarclima'); */
 
+//VER comoo arreglo lo de la ruta con el video de informaticaDP
 
 Route::get('/contacto', function () {
     return view('contactoprueba.contacto');

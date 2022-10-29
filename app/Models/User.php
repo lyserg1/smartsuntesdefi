@@ -60,6 +60,25 @@ class User extends Authenticatable
     ];
 
 
+    //Relacion uno a muchos
+    public function camaras(){
+        return $this->hasMany(Camara::class);
+    }
+
+
+    public function climas(){
+        return $this->hasMany(Clima::class);
+    }
+
+    public function ruidos(){
+        return $this->hasMany(Ruido::class);
+    }
+
+    public function luzs(){
+        return $this->hasMany(Luz::class);
+    }
+
+
     public function adminlte_desc(){
         return 'Administrador';
     }

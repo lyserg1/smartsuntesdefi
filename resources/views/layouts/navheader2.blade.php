@@ -61,6 +61,17 @@
     <meta name="twitter:description" content="Table" />
     <meta name="twitter:image" content="http://tailwindcomponents.com/storage/3460/conversions/temp48309-ogimage.jpg?v=2022-10-28 21:51:54" />
 
+    <meta property="og:url" content="https://tailwindcomponents.com/component/list-order-product/landing" />
+    <meta property="og:title" content="LIst Order Product by joker banny" />
+    <meta property="og:description" content="LIst Order Product" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TwComponents" />
+    <meta name="twitter:title" content="LIst Order Product by joker banny" />
+    <meta name="twitter:description" content="LIst Order Product" />
+    <meta name="twitter:image" content="http://tailwindcomponents.com/storage/5496/conversions/temp93448-ogimage.jpg?v=2022-10-29 03:55:05" />
+
+
 
     <title>Smartsunshine </title>
 
