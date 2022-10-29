@@ -21,7 +21,7 @@
             type="text"
             name="name"
             id="name"
-            placeholder="Full Name"
+            placeholder="Ingresa tu Nombre Completo"
             class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
           />
         </div>
@@ -36,7 +36,7 @@
             type="email"
             name="email"
             id="email"
-            placeholder="example@domain.com"
+            placeholder="Ingresa tu E-Mail"
             class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
           />
         </div>
@@ -51,7 +51,7 @@
             type="text"
             name="subject"
             id="subject"
-            placeholder="Enter your subject"
+            placeholder="Ingresa el Motivo"
             class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
           />
         </div>
@@ -66,7 +66,7 @@
             rows="4"
             name="message"
             id="message"
-            placeholder="Type your message"
+            placeholder="Escribe tu mensaje"
             class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
           ></textarea>
         </div>

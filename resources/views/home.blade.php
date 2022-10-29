@@ -2,24 +2,24 @@
 
 <div class="sliderAx h-auto">
     <div id="slider-1" class="container mx-auto">
-      <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80)">
+      <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://w0.peakpx.com/wallpaper/607/575/HD-wallpaper-where-chilly-winds-blow-light-poles-snow-parking-lot-wind-night.jpg)">
      <div class="md:w-1/2">
-      <p class="font-bold text-sm uppercase">Services</p>
-      <p class="text-3xl font-bold">Hello world</p>
-      <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-      <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+      <p class="font-bold text-sm uppercase">Sistema</p>
+      <p class="text-3xl font-bold">Postes Inteligentes</p>
+      <p class="text-2xl mb-10 leading-none">Mejorando la infraestructura y conectividad de la ciudad</p>
+      <a href="/contacto" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
       </div>
   </div> <!-- container -->
     <br>
     </div>
 
     <div id="slider-2" class="container mx-auto">
-      <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+      <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://www.enel.pe/content/enel-pe/es/megamenu/sostenibilidad/que-es-una-smart-city-y-cuales-son-sus-beneficios/_jcr_content/carousel/items/image.img.png/1543864928307.png)">
 
-<p class="font-bold text-sm uppercase">Services</p>
-      <p class="text-3xl font-bold">Hello world</p>
-      <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-      <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+<p class="font-bold text-sm uppercase">Sistema</p>
+      <p class="text-3xl font-bold">Automatizacion de Postes con tecnologia IOT</p>
+      <p class="text-2xl mb-10 leading-none">Ciudad conectada y consciente</p>
+      <a href="/contacto" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
 
   </div> <!-- container -->
     <br>
@@ -208,7 +208,7 @@
                     <hr class="border-gray-200 dark:border-white">
 
                     <p class="p-8 text-sm text-white">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?
+                        Somos una Startup (Equipo de desarrollo) que ha estado trabajando en un proyecto innovador y tecnologico a través las tecnologias IOT (Internet de las cosas) con el fin de llevar las tecnologias a las calles y generar un impacto positivo en las ciudades para el beneficio del medio ambiente y las personas
                     </p>
                 </div>
 
@@ -223,7 +223,7 @@
                     <hr class="border-gray-200 dark:border-white">
 
                     <p class="p-8 text-sm text-white">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?
+                       Nuestra misión es Fortalecer la infraestructura y establecer una conectividad de la ciudad para ser capaces de entregar datos de forma inteligente a instituciones con el fin de beneficiar el entorno público por el que transitan las personas.
                     </p>
                 </div>
 
@@ -237,7 +237,7 @@
                     <hr class="border-gray-200 dark:border-white">
 
                     <p class="p-8 text-sm text-white">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?
+                        Nuestra visión es ser una empresa reconocida por impulsar e integrar dispositivos inteligentes a la infraestructura de las ciudades.​
                     </p>
                 </div>
 
@@ -271,40 +271,18 @@
                   class="w-10 h-10 rounded-full overflow-hidden"/>
               </div>
               <div class="pl-2 pt-2 ">
-                <p class="font-bold">Vipin Bansal</p>
-                <p class="text-xs">2 June 2022</p>
+                <p class="font-bold">Sebastian Ortiz</p>
+
               </div>
             </div>
       </div>
 
 
-    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/blog.jpg?alt=media&token=271cb624-94d4-468d-a14d-455377ba75c2" alt="blog cover"/>
+    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://img.freepik.com/vector-premium/icono-circulo-usuario-anonimo-ilustracion-vector-estilo-plano-sombra_520826-1931.jpg">
 
     <div class="p-4">
-      <h2 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Web development</h2>
-      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">This is a blog template</h1>
-      <div class="flex items-center flex-wrap ">
-        <a href="/" class="text-green-800  md:mb-2 lg:mb-0">
-          <p class="inline-flex items-center">Read Blog
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </p>
-        </a>
-        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-          <svg class="w-4 h-4 mr-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-          </svg>
-          24
-        </span>
-        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-          </svg>
-          89
-        </span>
-      </div>
+      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Desarrollador Web y Product Owner</h1>
+
 
 
     </div>
@@ -320,40 +298,18 @@
                   class="w-10 h-10 rounded-full overflow-hidden"/>
               </div>
               <div class="pl-2 pt-2 ">
-                <p class="font-bold">Vipin Bansal</p>
-                <p class="text-xs">2 June 2022</p>
+                <p class="font-bold">Darien Urizar</p>
+
               </div>
             </div>
       </div>
 
 
-    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/blog.jpg?alt=media&token=271cb624-94d4-468d-a14d-455377ba75c2" alt="blog cover"/>
+    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://media.istockphoto.com/vectors/user-icon-vector-id652875416?k=20&m=652875416&s=170667a&w=0&h=kwLb1izRXOdMowulW8d_q_ebm0jlUbvboVSCqYkk2oM=">
 
     <div class="p-4">
-      <h2 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Web development</h2>
-      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">This is a blog template</h1>
-      <div class="flex items-center flex-wrap ">
-        <a href="/" class="text-green-800  md:mb-2 lg:mb-0">
-          <p class="inline-flex items-center">Read Blog
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </p>
-        </a>
-        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-          <svg class="w-4 h-4 mr-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-          </svg>
-          24
-        </span>
-        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-          </svg>
-          89
-        </span>
-      </div>
+
+      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Desarrollador Web</h1>
 
 
     </div>
@@ -369,40 +325,19 @@
                   class="w-10 h-10 rounded-full overflow-hidden"/>
               </div>
               <div class="pl-2 pt-2 ">
-                <p class="font-bold">Vipin Bansal</p>
-                <p class="text-xs">2 June 2022</p>
+                <p class="font-bold">Diego Godoy</p>
+
               </div>
             </div>
       </div>
 
 
-    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/blog.jpg?alt=media&token=271cb624-94d4-468d-a14d-455377ba75c2" alt="blog cover"/>
+    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://us.123rf.com/450wm/imagevectors/imagevectors1606/imagevectors160600225/58872992-blanco-perfil-de-usuario-icono-en-el-botón-azul-aislado-en-blanco.jpg"/>
 
     <div class="p-4">
-      <h2 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Web development</h2>
-      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">This is a blog template</h1>
-      <div class="flex items-center flex-wrap ">
-        <a href="/" class="text-green-800  md:mb-2 lg:mb-0">
-          <p class="inline-flex items-center">Read Blog
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </p>
-        </a>
-        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-          <svg class="w-4 h-4 mr-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-          </svg>
-          24
-        </span>
-        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-          </svg>
-          89
-        </span>
-      </div>
+
+      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Jefe de Proyecto y Documentador</h1>
+
 
 
     </div>
