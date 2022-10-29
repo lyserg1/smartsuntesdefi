@@ -231,7 +231,7 @@ body {
 <nav class="flex items-center bg-gray-900 p-3 flex-wrap">
       <a href="/" class="p-2 mr-4 inline-flex items-center">
         <div class="flex justify-center items-center ml-5">
-    <img src="img/intento.png"" alt="logo" class="w-8 mx-10">
+            <img src="img/intento.png" alt="logo" border="0" width="60" height="50">
 
   </div>
         <span class="text-xl text-white font-bold uppercase tracking-wide"
