@@ -130,10 +130,10 @@ return [
     */
 
     'usermenu_enabled' => true,
-    'usermenu_header' => false,
+    'usermenu_header' => true,
     'usermenu_header_class' => 'bg-primary',
     'usermenu_image' => false,
-    'usermenu_desc' => false,
+    'usermenu_desc' => true,
     'usermenu_profile_url' => false,
 
     /*
@@ -316,7 +316,7 @@ return [
 
             'text'        => 'Climas',
             'url'         => 'clima',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fas fa-fw fa-cloud',
             'label_color' => 'success',
 
         ],
@@ -324,7 +324,7 @@ return [
 
             'text'        => 'Luz',
             'url'         => 'luz',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fas fa-fw fa-lightbulb',
             'label_color' => 'success',
 
         ],
@@ -332,7 +332,7 @@ return [
 
             'text'        => 'Camaras',
             'url'         => 'camara',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fas fa-fw fa-camera',
             'label_color' => 'success',
 
         ],
@@ -340,7 +340,7 @@ return [
 
             'text'        => 'Ruidos',
             'url'         => 'ruido',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fas fa-fw fa-wave-square',
             'label_color' => 'success',
 
         ],
@@ -348,7 +348,7 @@ return [
 
             'text'        => 'Estadisticas',
             'url'         => 'estadistica',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fas fa-fw fa-thin fa-chart-bar',
             'label_color' => 'success',
 
         ],

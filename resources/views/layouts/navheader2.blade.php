@@ -50,13 +50,25 @@
 
     <meta name="twitter:image" content="http://tailwindcomponents.com/storage/1092/temp29316.png?v=2022-10-24 04:42:30" />
 
+
+    <meta property="og:url" content="https://tailwindcomponents.com/component/table-2/landing" />
+    <meta property="og:title" content="Table by safal123" />
+    <meta property="og:description" content="Table" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TwComponents" />
+    <meta name="twitter:title" content="Table by safal123" />
+    <meta name="twitter:description" content="Table" />
+    <meta name="twitter:image" content="http://tailwindcomponents.com/storage/3460/conversions/temp48309-ogimage.jpg?v=2022-10-28 21:51:54" />
+
+
     <title>Smartsunshine </title>
 
             <link href="https://unpkg.com/tailwindcss@1.3.4/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 
-
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 <script>
   $(document).ready(function() {

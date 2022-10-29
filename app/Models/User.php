@@ -60,6 +60,11 @@ class User extends Authenticatable
     ];
 
 
+    public function adminlte_desc(){
+        return 'Administrador';
+    }
+
+
     public function adminlte_profile_url() {
 
         return 'profile/username';

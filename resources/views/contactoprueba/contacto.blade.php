@@ -15,7 +15,7 @@
             for="name"
             class="mb-3 block text-base font-medium text-[#07074D]"
           >
-            Full Name
+            Nombre Completo
           </label>
           <input
             type="text"
@@ -30,7 +30,7 @@
             for="email"
             class="mb-3 block text-base font-medium text-[#07074D]"
           >
-            Email Address
+            E-Mail
           </label>
           <input
             type="email"
@@ -45,7 +45,7 @@
             for="subject"
             class="mb-3 block text-base font-medium text-[#07074D]"
           >
-            Subject
+            Motivo
           </label>
           <input
             type="text"
@@ -60,7 +60,7 @@
             for="message"
             class="mb-3 block text-base font-medium text-[#07074D]"
           >
-            Message
+            Mensaje
           </label>
           <textarea
             rows="4"
@@ -74,8 +74,8 @@
           <button
             class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
           >
-            Submit
-            <a href="/contacto">Ingresar</a>
+            Enviar
+            <a href="/contacto">Mensaje</a>
 
           </button>
         </div>
