@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Ruido>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Luz>
  */
-class RuidoFactory extends Factory
+class LuzFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,13 +17,17 @@ class RuidoFactory extends Factory
     public function definition()
     {
 
-        $cantidad = $this->faker->unique()->word(20);
+
+        $intensidad = $this->faker->unique()->number(20);
+
 
         return [
-            'cantidad' => $cantidad,
-            'poste_id' => '1'
-        ];
 
+
+            'intensidad' => $intensidad,
+            'poste_id' => '1'
+
+        ];
 
 
     }

@@ -4,10 +4,11 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\User;
 use App\Models\Poste;
+use App\Models\Ruido;
+use Illuminate\Support\Str;
 
-class UserSeeder extends Seeder
+class RuidoSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,15 +19,16 @@ class UserSeeder extends Seeder
     {
         //
 
-        User::create([
-            'name' => 'Diego Godoy',
-            'email' => 'diego@hotmail.com',
-            'password' => bcrypt('falkor21')
+        Ruido::create([
+            'cantidad' => '5',
+
+
         ]);
 
 
 
-        User::factory(99)->create();
+        Ruido::factory(10)->create();
+
 
     }
 }

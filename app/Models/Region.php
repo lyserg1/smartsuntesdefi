@@ -17,16 +17,20 @@ class Region extends Model
 
 
     //Relacion ujno a multiselectChoices
-    public function comunas(){
+    /* public function comunas(){
         return $this->hasMany(Comuna::class);
     }
 
 
     public function climas(){
         return $this->belongsToMany(Clima::class);
+    } */
+
+
+    //Relacion 1 a muchos inversa de Poste a region
+    public function postes(){
+        return $this->belongsTo(Poste::class);
     }
-
-
 
 
 }

@@ -20,6 +20,11 @@ return new class extends Migration
             $table->string('slug');
 
 
+            $table->unsignedBigInteger('poste_id');
+
+            $table->foreign('poste_id')->references('id')->on('postes')->onDelete('cascade');
+
+
             $table->timestamps();
         });
     }

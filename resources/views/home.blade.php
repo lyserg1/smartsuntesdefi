@@ -7,7 +7,7 @@
       <p class="font-bold text-sm uppercase">Sistema</p>
       <p class="text-3xl font-bold">Postes Inteligentes</p>
       <p class="text-2xl mb-10 leading-none">Mejorando la infraestructura y conectividad de la ciudad</p>
-      <a href="/contacto" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+      <a href="/contacto" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contactanos</a>
       </div>
   </div> <!-- container -->
     <br>
@@ -19,7 +19,7 @@
 <p class="font-bold text-sm uppercase">Sistema</p>
       <p class="text-3xl font-bold">Automatizacion de Postes con tecnologia IOT</p>
       <p class="text-2xl mb-10 leading-none">Ciudad conectada y consciente</p>
-      <a href="/contacto" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+      <a href="/contacto" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contactanos</a>
 
   </div> <!-- container -->
     <br>

@@ -16,8 +16,14 @@ class ImagenFactory extends Factory
      */
     public function definition()
     {
+
+
+        $ruta = $this->faker->unique()->word(20);
+
         return [
-            //
+            'ruta' => $ruta,
+            'camara_id' => '1'
         ];
+
     }
 }

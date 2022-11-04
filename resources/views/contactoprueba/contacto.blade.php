@@ -1,9 +1,5 @@
 @include('layouts.navbarheader')
 
-<div class="fixed bottom-0 left-0 right-0 z-40 px-4 py-3 text-center text-white bg-gray-800">
-    This a Tailwind CSS Contact Form by MusharofChy.
-    <a class="text-gray-200 underline" href="https://tailwindcomponents.com/component/fully-working-contact-form-for-tailwind-css">Component details</a>
-</div>
 
 <div class="flex items-center justify-center p-12">
     <!-- Author: FormBold Team -->

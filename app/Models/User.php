@@ -61,7 +61,7 @@ class User extends Authenticatable
 
 
     //Relacion uno a muchos
-    public function camaras(){
+    /* public function camaras(){
         return $this->hasMany(Camara::class);
     }
 
@@ -76,6 +76,10 @@ class User extends Authenticatable
 
     public function luzs(){
         return $this->hasMany(Luz::class);
+    } */
+
+    public function postes(){
+        return $this->hasMany(Poste::class);
     }
 
 

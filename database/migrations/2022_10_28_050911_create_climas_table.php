@@ -23,9 +23,9 @@ return new class extends Migration
             $table->string('mes');
 
 
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('poste_id');
 
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('poste_id')->references('id')->on('postes');
 
 
             $table->timestamps();

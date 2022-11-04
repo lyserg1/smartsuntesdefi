@@ -3,6 +3,8 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Camara>
@@ -16,8 +18,19 @@ class CamaraFactory extends Factory
      */
     public function definition()
     {
+
+        $name = $this->faker->unique()->word(20);
+
         return [
-            //
+
+
+            'name' => $name,
+            'conteo' => $this->faker->number(20),
+            'slug' => Str::slug($name),
+            'poste_id' => '1'
+
         ];
+
+
     }
 }

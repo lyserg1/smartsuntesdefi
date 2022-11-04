@@ -1,6 +1,12 @@
 <?php
 
 namespace Database\Seeders;
+use App\Models\Poste;
+use App\Models\Clima;
+use App\Models\Ruido;
+use App\Models\Camara;
+use App\Models\Imagen;
+use App\Models\Luz;
 use App\Models\Region;
 use App\Models\Comuna;
 
@@ -29,8 +35,15 @@ class DatabaseSeeder extends Seeder
 
         $this->call(UserSeeder::class);
 
+        Poste::factory(20)->create();
+        Clima::factory(20)->create();
+        Camara::factory(10)->create();
+        Imagen::factory(10)->create();
         Region::factory(10)->create();
-        Comuna::factory(4)->create();
+        Comuna::factory(10)->create();
+        Luz::factory(10)->create();
+        Ruido::factory(10)->create();
+
 
 
     }

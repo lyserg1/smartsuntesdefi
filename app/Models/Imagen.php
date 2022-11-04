@@ -9,16 +9,16 @@ class Imagen extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'ruta', 'camara_id'
+    ];
 
-    //Relacion ujno a multiselectChoices
-    public function imagens(){
-        return $this->hasMany(Imagen::class);
-    }
 
 
     public function camaras(){
         return $this->belongsTo(Camara::class);
     }
+
 
 
 }

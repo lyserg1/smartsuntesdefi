@@ -9,9 +9,15 @@ class Luz extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'intensidad', 'poste_id'
+    ];
 
-    public function user(){
-        return $this->belongsTo(User::class);
+    //Relacion 1 a muchos inversa de Poste a luzs
+    public function postes(){
+        return $this->belongsTo(Poste::class);
     }
+
+
 
 }

@@ -314,6 +314,14 @@ return [
         ],
         [
 
+            'text'        => 'Poste',
+            'url'         => 'poste',
+            'icon'        => 'fas fa-fw fa-thin fa-pencil-alt',
+            'label_color' => 'success',
+
+        ],
+        [
+
             'text'        => 'Climas',
             'url'         => 'clima',
             'icon'        => 'fas fa-fw fa-cloud',
