@@ -10,4 +10,6 @@ class RuidoController extends Controller
     public function index (){
         return view('ruido.index');
     }
+
+
 }

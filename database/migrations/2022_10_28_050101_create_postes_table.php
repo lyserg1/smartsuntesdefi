@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('direccion');
             $table->string('slug');
             $table->string('estado');
+            $table->string('region');
+            $table->string('comuna');
 
             $table->unsignedBigInteger('user_id');
 

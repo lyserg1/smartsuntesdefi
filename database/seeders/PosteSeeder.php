@@ -22,8 +22,10 @@ class PosteSeeder extends Seeder
 
         Poste::create([
             'direccion' => 'Pasaje Assis 591',
-            'slug' => Str::slug('Pasaje Assis 591'),
-            'estado' => 'Disponible',
+            'region' => 'Coquimbo',
+            'comuna' => 'La Serena',
+            'slug' => Str::slug('Pasaje Assis 591', 'Coquimbo', 'La Serena'),
+            'estado' => 'Activo',
 
         ]);
 

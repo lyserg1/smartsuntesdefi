@@ -7,6 +7,7 @@ use App\Http\Controllers\CamaraController;
 use App\Http\Controllers\RuidoController;
 use App\Http\Controllers\LuzController;
 use App\Http\Controllers\EstadisticaController;
+use App\Http\Controllers\PosteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,12 +26,6 @@ Route::get('/', function () {
 
 
 
-//Por el momento esta asi, despues la arreglare con Controller.
-/* Route::get('/dash/clima', function(){
-    return view('climas.index');
-});
- */
-
 
 //Asi es con el controller.
 Route::get('/dash','App\Http\Controllers\DashboardController@index');
@@ -45,34 +40,29 @@ Route::get('/ruido','App\Http\Controllers\RuidoController@index');
 
 Route::get('/estadistica','App\Http\Controllers\EstadisticaController@index');
 
+
+//Ver como arreglo esta mas adelante
 Route::get('/admin','App\Http\Controllers\PerfilController@index');
 
-/* Route::get('/clima','App\Http\Controllers\ClimaController@mostrarclima'); */
 
-//VER comoo arreglo lo de la ruta con el video de informaticaDP
+
+/* Route::get('/poste','App\Http\Controllers\PosteController@index'); */
+
 
 Route::get('/contacto', function () {
     return view('contactoprueba.contacto');
 });
 
 
-
-/* Route::get('/contactanos', 'App\Http\Controllers\ContactoController@index'); */
-
-/* Route::get('/layouts/contacto', [ContactoController::class, 'index']); */
+ //ESTA RUTA ES LA DEFINITVA
+ Route::resource('poste', PosteController::class);
 
 
-//ESTAS FUERON otras rutas con las que intente, las de arriba estan ok
-/* Route::get('/clima',[ClimaController::class, 'index']); */
 
-/* Route::get('/profile','App\Http\Controllers\PerfilController@show');
- */
-/* Route::get('/admin', [PerfilController::class, 'profile']); */
 
-/* Route::get('/admin',[ProfileController::class, 'profile']);
- */
 
-//Es una forma de acceder el dashboard yo usare los controller.
+
+//Es una forma de acceder el dashboard yo usare los controller. - analizar
 /* Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -83,6 +73,26 @@ Route::get('/contacto', function () {
     })->name('dash');
 });
  */
+
+
+
+Route::get('/dash/poste', function (){
+    return view('poste.index');
+});
+
+/* Route::get('/dash/poste/create', function () {
+    return view('poste.create');
+});
+ */
+
+
+
+
+
+
+
+
+/* Route::get('/poste',[App\Http\Controllers\PosteController::class, 'create']); */
 
  //Esta es la otra ruta que vi, la que parece que es la de actual laravel 8, pero estoy confundido.
 /**  Route::middleware([

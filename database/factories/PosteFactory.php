@@ -19,13 +19,17 @@ class PosteFactory extends Factory
     {
 
         $direccion = $this->faker->unique()->word(20);
+        $region = $this->faker->unique()->word(20);
+        $comuna = $this->faker->unique()->word(20);
         $estado = $this->faker->unique()->word(20);
 
         return [
 
 
             'direccion' => $direccion,
-            'slug' => Str::slug($direccion),
+            'region' => $region,
+            'comuna' => $comuna,
+            'slug' => Str::slug($direccion, $region, $comuna),
             'estado' => $estado,
             'user_id' => '1'
 
