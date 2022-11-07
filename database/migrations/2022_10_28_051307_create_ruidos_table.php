@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
 
 
-            $table->unsignedBigInteger('cantidad');
+            $table->string('cantidad');
 
             $table->unsignedBigInteger('poste_id');
 

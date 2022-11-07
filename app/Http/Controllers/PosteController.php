@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Poste;
-
+use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
 class PosteController extends Controller
@@ -39,16 +39,21 @@ class PosteController extends Controller
      */
     public function store(Request $request)
     {
-        $postes = new Poste();
 
-        $postes->direccion = $request->get('direccion');
-        $postes->region = $request->get('region');
-        $postes->comuna = $request->get('comuna');
-        $postes->estado = $request->get('estado');
+        $data = $request->all();
 
-        $postes->save();
 
-        return redirect('poste.index')->with('success', 'Poste guardado!');
+            $poste = Poste::create([
+                'direccion' => $data['direccion'],
+                'region' => $data['region'],
+                'comuna' => $data['comuna'],
+                'estado' => $data['estado'],
+                'user_id' => Auth::user()->id,
+            ]);
+
+        return redirect()->route('poste.index');
+
+
 
     }
 

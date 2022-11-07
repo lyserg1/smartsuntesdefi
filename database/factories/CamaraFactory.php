@@ -20,12 +20,13 @@ class CamaraFactory extends Factory
     {
 
         $name = $this->faker->unique()->word(20);
+        $conteo = $this->faker->unique()->word(20);
 
         return [
 
 
             'name' => $name,
-            'conteo' => $this->faker->number(20),
+            'conteo' => $conteo,
             'slug' => Str::slug($name),
             'poste_id' => '1'
 

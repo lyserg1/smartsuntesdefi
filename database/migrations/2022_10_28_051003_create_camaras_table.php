@@ -19,7 +19,7 @@ return new class extends Migration
 
 
             $table->string('name');
-            $table->unsignedBigInteger('conteo');
+            $table->string('conteo');
             $table->string('slug');
 
             $table->unsignedBigInteger('poste_id');

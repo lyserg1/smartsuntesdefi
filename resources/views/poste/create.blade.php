@@ -14,11 +14,11 @@
 
      <!--Parece que por ejemplo si le pongo poste.create me lleva a esta misma vista, pero si no me dice que -->
 
-    <form action={{ route('poste.store') }} method="GET">
+    <form action={{ route('poste.store') }} method="POST">
         @csrf
         <div class="md-4">
             <label for="" class="form-label">Dirección</label>
-            <input id="direccion" name="direccion" type="text" class="form-control" tabindex="1">
+            <input name="direccion" type="text" class="form-control" tabindex="1">
 
             <br>
 
@@ -28,34 +28,34 @@
         </div>
 
 
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" aria-label="Default select example">
+        <select name="region" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" aria-label="Default select example">
             <option selected>Selecciona la Región</option>
-            <option name="region" value="Coquimbo">Coquimbo</option>
+            <option value="Coquimbo">Coquimbo</option>
         </select>
 
         <br>
         <br>
 
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" aria-label="Default select example">
+        <select name="comuna" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" aria-label="Default select example">
             <option selected>Selecciona la Comuna</option>
-            <option id="comuna" name="comuna" value="Choapa">Choapa</option>
-            <option id="comuna" name="comuna" value="Elqui">Elqui</option>
-            <option id="comuna" name="comuna" value="Limari">Limari</option>
-            <option id="comuna" name="comuna" value="Canela">Canela</option>
-            <option id="comuna" name="comuna" value="Illapel">Illapel</option>
-            <option id="comuna" name="comuna" value="Los Vilos">Los Vilos</option>
-            <option id="comuna" name="comuna" value="Salamanca">Salamanca</option>
-            <option id="comuna" name="comuna" value="Andacollo">Andacollo</option>
-            <option id="comuna" name="comuna" value="Coquimbo">Coquimbo</option>
-            <option id="comuna" name="comuna" value="La Higuera">La Higuera</option>
-            <option id="comuna" name="comuna" value="La Serena">La Serena</option>
-            <option id="comuna" name="comuna" value="Paihuano">Paihuano</option>
-            <option id="comuna" name="comuna" value="Vicuña">Vicuña</option>
-            <option id="comuna" name="comuna" value="Combarbala">Combarbala</option>
-            <option id="comuna" name="comuna" value="Monte Patria">Monte Patria</option>
-            <option id="comuna" name="comuna" value="Ovalle">Ovalle</option>
-            <option id="comuna" name="comuna" value="Punitaqui">Punitaqui</option>
-            <option id="comuna" name="comuna" value="Rio Hurtado">Rio Hurtado</option>
+            <option value="Choapa">Choapa</option>
+            <option value="Elqui">Elqui</option>
+            <option value="Limari">Limari</option>
+            <option value="Canela">Canela</option>
+            <option value="Illapel">Illapel</option>
+            <option value="Los Vilos">Los Vilos</option>
+            <option value="Salamanca">Salamanca</option>
+            <option value="Andacollo">Andacollo</option>
+            <option value="Coquimbo">Coquimbo</option>
+            <option value="La Higuera">La Higuera</option>
+            <option value="La Serena">La Serena</option>
+            <option value="Paihuano">Paihuano</option>
+            <option value="Vicuña">Vicuña</option>
+            <option value="Combarbala">Combarbala</option>
+            <option value="Monte Patria">Monte Patria</option>
+            <option value="Ovalle">Ovalle</option>
+            <option value="Punitaqui">Punitaqui</option>
+            <option value="Rio Hurtado">Rio Hurtado</option>
 
 
         </select>
@@ -63,10 +63,10 @@
         <br>
         <br>
 
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" aria-label="Default select example">
+        <select name="estado" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" aria-label="Default select example">
             <option selected>Selecciona el Estado</option>
-            <option name="estado" value="Activo">Activo</option>
-            <option name="estado" value="Inactivo">Inactivo</option>
+            <option value="Activo">Activo</option>
+            <option value="Inactivo">Inactivo</option>
         </select>
 
 

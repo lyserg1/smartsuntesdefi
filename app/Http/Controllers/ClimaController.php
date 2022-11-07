@@ -18,7 +18,7 @@ class ClimaController extends Controller
     }
 
 
-    //aqui estaba mi problema esa ruta malditaaaaaa
+    //aqui estaba mi problema esa ruta malditaaaaaa - modificar poner la resource
     public function mostrarclima(){
 
     return view('clima.mostrarclima');

@@ -20,9 +20,6 @@ class ClimaSeeder extends Seeder
         Clima::create([
             'temperatura' => '21',
             'humedad' => '50',
-            'fechaActual' => '2021-05-01',
-            'mes' => '5',
-
 
         ]);
 

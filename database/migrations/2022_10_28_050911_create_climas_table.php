@@ -19,8 +19,8 @@ return new class extends Migration
 
             $table->string('temperatura');
             $table->string('humedad');
-            $table->date('fechaActual');
-            $table->string('mes');
+            /* $table->date('fechaActual');
+            $table->string('mes'); */
 
 
             $table->unsignedBigInteger('poste_id');

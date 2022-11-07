@@ -10,7 +10,7 @@ class Clima extends Model
     use HasFactory;
 
     protected $fillable = [
-        'temperatura', 'humedad', 'fechaActual', 'mes', 'poste_id'
+        'temperatura', 'humedad', 'poste_id'
     ];
 
    /*  //relacion muchos a muchos - ya no va

@@ -11,8 +11,13 @@ class Poste extends Model
 
 
     protected $fillable = [
-        'direccion', 'slug', 'estado', 'user_id'
+        'direccion', 'region', 'comuna', 'slug', 'estado', 'user_id'
     ];
+
+
+    public function Users(){
+        return $this->belongsTo(User::class);
+    }
 
 
     //relacion de 1 a muchos de poste a climas

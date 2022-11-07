@@ -22,15 +22,15 @@ class ClimaFactory extends Factory
         $temperatura = $this->faker->unique()->word(20);
         $humedad = $this->faker->unique()->word(20);
         /* $fechaActual = $this->faker->unique()->word(20); */
-        $mes = $this->faker->unique()->word(20);
+       /* $mes = $this->faker->unique()->word(20); */
 
         return [
 
 
             'temperatura' => $temperatura,
             'humedad' => $humedad,
-            'fechaActual' => $this->faker->date(),
-            'mes' => $mes,
+/*             'fechaActual' => $this->faker->date(),
+            'mes' => $mes, */
             'poste_id' => '1'
 
         ];

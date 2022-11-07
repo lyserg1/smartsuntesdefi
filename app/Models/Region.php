@@ -11,7 +11,7 @@ class Region extends Model
 
 
     protected $fillable = [
-        'name', 'slug'
+        'name', 'slug', 'poste_id'
     ];
 
 
@@ -32,5 +32,9 @@ class Region extends Model
         return $this->belongsTo(Poste::class);
     }
 
+    //relacion 1 a muchos de Poste a region
+    public function comunas(){
+        return $this->hasMany(Comuna::class);
+    }
 
 }

@@ -17,13 +17,13 @@ class RegionFactory extends Factory
      */
     public function definition()
     {
-        $name = $this->faker->unique()->word(20);
+        $name = $this->faker->unique()->sentence(20);
 
         return [
 
             'name' => $name,
-            'slug' => Str::slug($name)
-
+            'slug' => Str::slug($name),
+            'poste_id' => '3'
         ];
     }
 }

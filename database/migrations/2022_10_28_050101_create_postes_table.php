@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
 
             $table->string('direccion');
-            $table->string('slug');
+            $table->string('slug')->nullable();
             $table->string('estado');
             $table->string('region');
             $table->string('comuna');
