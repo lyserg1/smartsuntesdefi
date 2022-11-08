@@ -18,7 +18,7 @@
         @csrf
         <div class="md-4">
             <label for="" class="form-label">Dirección</label>
-            <input name="direccion" type="text" class="form-control" tabindex="1">
+            <input name="direccion" type="text" class="form-control" required autocomplete="direccion" autofocus tabindex="1">
 
             <br>
 
@@ -28,7 +28,7 @@
         </div>
 
 
-        <select name="region" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" aria-label="Default select example">
+        <select name="region" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required autocomplete="region" autofocus aria-label="Default select example">
             <option selected>Selecciona la Región</option>
             <option value="Coquimbo">Coquimbo</option>
         </select>
@@ -36,7 +36,7 @@
         <br>
         <br>
 
-        <select name="comuna" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" aria-label="Default select example">
+        <select name="comuna" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required autocomplete="comuna" autofocus aria-label="Default select example">
             <option selected>Selecciona la Comuna</option>
             <option value="Choapa">Choapa</option>
             <option value="Elqui">Elqui</option>
@@ -63,7 +63,7 @@
         <br>
         <br>
 
-        <select name="estado" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" aria-label="Default select example">
+        <select name="estado" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required autocomplete="estado" autofocus aria-label="Default select example">
             <option selected>Selecciona el Estado</option>
             <option value="Activo">Activo</option>
             <option value="Inactivo">Inactivo</option>

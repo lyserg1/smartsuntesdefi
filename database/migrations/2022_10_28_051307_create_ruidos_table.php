@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
 
 return new class extends Migration
 {
@@ -18,10 +19,11 @@ return new class extends Migration
 
 
             $table->string('cantidad');
+            $table->string('slug')->nullable();
 
             $table->unsignedBigInteger('poste_id');
 
-            $table->foreign('poste_id')->references('id')->on('postes')->onDelete('cascade');
+            $table->foreign('poste_id')->references('id')->on('postes');
 
 
             $table->timestamps();

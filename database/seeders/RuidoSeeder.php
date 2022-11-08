@@ -20,7 +20,8 @@ class RuidoSeeder extends Seeder
         //
 
         Ruido::create([
-            'cantidad' => 'mil'
+            'cantidad' => '41',
+            'slug' => Str::slug('41'),
 
 
         ]);

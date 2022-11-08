@@ -25,6 +25,7 @@
                 <th scope="col">Estado</th>
                 <th scope="col">Fecha de Registro</th>
                 <th scope="col">Fecha de Modificación</th>
+                <th scope="col">Acción</th>
             </tr>
 
 
@@ -42,8 +43,12 @@
                 <td>{{$poste->updated_at}}</td>
                 <td>
 
-                    <a class="btn btn-primary">Editar</a>
-                    <button class="btn btn-info">Eliminar</button>
+                    <form action="{{route('poste.destroy', $poste)}}" method="POST">
+                    <a href="{{ route('poste.edit', $poste) }}" class="btn btn-primary">Editar</a>
+                    @csrf
+                    @method('DELETE')
+                    {{-- <button type="submit" class="btn btn-info">Eliminar</button> --}}
+                    </form>
 
                 </td>
             </tr>

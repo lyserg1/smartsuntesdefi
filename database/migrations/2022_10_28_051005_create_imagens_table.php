@@ -22,7 +22,7 @@ return new class extends Migration
 
             $table->unsignedBigInteger('camara_id');
 
-            $table->foreign('camara_id')->references('id')->on('camaras')->onDelete('cascade');
+            $table->foreign('camara_id')->references('id')->on('camaras');
 
 
             $table->timestamps();

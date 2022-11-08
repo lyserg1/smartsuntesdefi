@@ -65,7 +65,8 @@ class PosteController extends Controller
      */
     public function show($id)
     {
-        //
+        /* $poste = Poste::find($id);
+        return view('poste.show', compact('poste')); */
     }
 
     /**
@@ -76,7 +77,8 @@ class PosteController extends Controller
      */
     public function edit($id)
     {
-        //
+        $poste = Poste::find($id);
+        return view('poste.edit', compact('poste'));
     }
 
     /**
@@ -88,7 +90,18 @@ class PosteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        Poste::find($id)->update([
+            'direccion' => $request->direccion,
+            'region' => $request->region,
+            'comuna' => $request->comuna,
+            'estado' => $request->estado,
+
+
+        ]);
+
+
+        return redirect()->route('poste.index');
     }
 
     /**
@@ -99,6 +112,8 @@ class PosteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $poste = Poste::find($id);
+        $poste->delete();
+        return redirect()->back();
     }
 }

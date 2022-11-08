@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Ruido>
@@ -21,6 +22,7 @@ class RuidoFactory extends Factory
 
         return [
             'cantidad' => $cantidad,
+            'slug' => Str::slug($cantidad),
             'poste_id' => '1'
         ];
 
