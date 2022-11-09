@@ -30,38 +30,49 @@
 
     <br>
 
-    <table class="table">
+
+    <p></p>
+
+    <table class="table table-dark table-striped">
+
         <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Temperatura</th>
+                <th scope="col">Humedad</th>
+                <th scope="col">Fecha de Registro</th>
+                <th scope="col">Fecha de Modificación</th>
+                <th scope="col">Acción</th>
+            </tr>
+
+
         </thead>
+
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+            @foreach ($climas as $clima)
+            <tr>
+                <th scope="row">{{$clima->id}}</th>
+                <td>{{$clima->temperatura}}</td>
+                <td>{{$clima->humedad}}</td>
+                <td>{{$clima->created_at}}</td>
+                <td>{{$clima->updated_at}}</td>
+                <td>
+
+                    <form action="{{route('clima.destroy', $clima)}}" method="POST">
+                    {{-- <a href="{{ route('poste.edit', $poste) }}" class="btn btn-primary">Editar</a> --}}
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-info">Eliminar</button>
+                    </form>
+
+                </td>
+            </tr>
+            @endforeach
         </tbody>
-      </table>
 
+    </table>
 
-@stop
+@endsection
 
 
 

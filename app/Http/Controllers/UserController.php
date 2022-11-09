@@ -3,12 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Clima;
-use Illuminate\Support\Facades\Auth;
-use App\Models\User;
-use App\Models\Poste;
 
-class ClimaController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,10 +13,7 @@ class ClimaController extends Controller
      */
     public function index()
     {
-        $climas = Clima::all();
-
-
-        return view('clima.index', compact('climas'));
+        //
     }
 
     /**
@@ -86,8 +79,6 @@ class ClimaController extends Controller
      */
     public function destroy($id)
     {
-        $clima = Clima::find($id);
-        $clima->delete();
-        return redirect()->back();
+        //
     }
 }

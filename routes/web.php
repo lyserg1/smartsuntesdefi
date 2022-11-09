@@ -30,7 +30,7 @@ Route::get('/', function () {
 //Asi es con el controller.
 Route::get('/dash','App\Http\Controllers\DashboardController@index');
 
-Route::get('/clima','App\Http\Controllers\ClimaController@index');
+/* Route::get('/clima','App\Http\Controllers\ClimaController@index'); */
 
 Route::get('/luz','App\Http\Controllers\LuzController@index');
 
@@ -57,6 +57,7 @@ Route::get('/contacto', function () {
  //ESTA RUTA ES LA DEFINITVA
  Route::resource('poste', PosteController::class);
 
+ Route::resource('clima', ClimaController::class);
 
 
 
