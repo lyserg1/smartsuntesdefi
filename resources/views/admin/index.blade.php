@@ -1,5 +1,6 @@
 @include('layouts.navheader2')
 
+
 @extends('adminlte::page')
 
 
@@ -8,48 +9,80 @@
 
 @section('content_header')
     <h1>Perfil de Usuario</h1>
+
 @stop
+
+{{-- @include('layouts.msjs') --}}
+
 
 @section('content')
     <p>Bienvenido al Perfil de Usuario aqui, puedes modificar tus datos.</p>
 
-    <div>
-        <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-            @if (Laravel\Fortify\Features::canUpdateProfileInformation())
-                @livewire('profile.update-profile-information-form')
 
-                <x-jet-section-border />
-            @endif
 
-            @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::updatePasswords()))
-                <div class="mt-10 sm:mt-0">
-                    @livewire('profile.update-password-form')
+    <h2 class="text-center">Actualizar mis datos <hr></h2>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action={{ route('admin.store') }}  method="POST" class="needs-validation" novalidate>
+              @csrf
+
+              <div class="row mb-3">
+                  <div class="form-group mt-3">
+                      <label for="name">Nombre de Usuario</label>
+                      <input type="text" name="name" value="{{ Auth::user()->name }}" class="form-control @error('name') is-invalid @enderror" required>
+                        @error('name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
                 </div>
+              <div class="row mb-3">
+                <div class="form-group mt-3">
+                    <label for="password_actual">Clave Actual</label>
+                    <input type="password" name="password_actual" class="form-control @error('password_actual') is-invalid @enderror" required>
+                      @error('password_actual')
+                          <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                          </span>
+                      @enderror
+                  </div>
+              </div>
+              <div class="row mb-3">
+                  <div class="form-group mt-3">
+                      <label for="new_password ">Nueva Clave</label>
+                      <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" required>
+                      @error('password')
+                          <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                          </span>
+                      @enderror
+                  </div>
+              </div>
+              <div class="row mb-3">
+                  <div class="form-group mt-3">
+                      <label for="confirm_password">Confirmar nueva Clave</label>
+                      <input type="password" name="confirm_password" class="form-control @error('confirm_password') is-invalid @enderror"required>
+                      @error('confirm_password')
+                          <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                          </span>
+                      @enderror
+                  </div>
+              </div>
 
-                <x-jet-section-border />
-            @endif
-
-            @if (Laravel\Fortify\Features::canManageTwoFactorAuthentication())
-                <div class="mt-10 sm:mt-0">
-                    @livewire('profile.two-factor-authentication-form')
-                </div>
-
-                <x-jet-section-border />
-            @endif
-
-            <div class="mt-10 sm:mt-0">
-                @livewire('profile.logout-other-browser-sessions-form')
-            </div>
-
-            @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
-                <x-jet-section-border />
-
-                <div class="mt-10 sm:mt-0">
-                    @livewire('profile.delete-user-form')
-                </div>
-            @endif
-        </div>
+              <div class="row text-center mb-4 mt-5">
+                  <div class="col-md-12">
+                      <button type="submit" class="btn btn-primary" id="formSubmit">Guardar Cambios</button>
+                      <a href={{ route('admin.index') }} class="btn btn-success">Cancelar</a>
+                  </div>
+              </div>
+          </form>
+      </div>
     </div>
+  </div>
+
+
 @stop
 
 
@@ -64,4 +97,3 @@
     <script> console.log('Hi!'); </script>
 @stop
 
-@include('layouts.footer')

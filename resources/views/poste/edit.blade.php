@@ -1,3 +1,5 @@
+@include('layouts.navheader2')
+
 @extends('adminlte::page')
 
 @section('title', 'Dashboard')
@@ -24,7 +26,7 @@
             <input name="direccion" type="text" class="form-control" value="{{$poste->direccion}}" tabindex="1">
 
             <br>
-
+            <br>
 
 
 

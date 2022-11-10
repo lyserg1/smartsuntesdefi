@@ -8,6 +8,8 @@ use App\Http\Controllers\RuidoController;
 use App\Http\Controllers\LuzController;
 use App\Http\Controllers\EstadisticaController;
 use App\Http\Controllers\PosteController;
+use App\Http\Controllers\UserSettingsController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,9 +34,9 @@ Route::get('/dash','App\Http\Controllers\DashboardController@index');
 
 /* Route::get('/clima','App\Http\Controllers\ClimaController@index'); */
 
-Route::get('/luz','App\Http\Controllers\LuzController@index');
+/* Route::get('/luz','App\Http\Controllers\LuzController@index'); */
 
-Route::get('/camara','App\Http\Controllers\CamaraController@index');
+/* Route::get('/camara','App\Http\Controllers\CamaraController@index'); */
 
 Route::get('/ruido','App\Http\Controllers\RuidoController@index');
 
@@ -42,7 +44,7 @@ Route::get('/estadistica','App\Http\Controllers\EstadisticaController@index');
 
 
 //Ver como arreglo esta mas adelante
-Route::get('/admin','App\Http\Controllers\PerfilController@index');
+/* Route::get('/admin','App\Http\Controllers\PerfilController@index'); */
 
 
 
@@ -54,13 +56,18 @@ Route::get('/contacto', function () {
 });
 
 
+
+
  //ESTA RUTA ES LA DEFINITVA
  Route::resource('poste', PosteController::class);
 
  Route::resource('clima', ClimaController::class);
 
+ Route::resource('luz', LuzController::class);
 
+ Route::resource('camara', CamaraController::class);
 
+Route::resource('admin', UserSettingsController::class);
 
 
 //Es una forma de acceder el dashboard yo usare los controller. - analizar

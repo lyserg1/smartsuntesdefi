@@ -20,13 +20,13 @@ class UserSeeder extends Seeder
 
         User::create([
             'name' => 'Diego Godoy',
-            'email' => 'diego@hotmail.com',
-            'password' => bcrypt('falkor21')
+            'email' => 'diego11@gmail.com',
+            'password' => bcrypt('falkor31')
         ]);
 
 
 
-        User::factory(99)->create();
+        User::factory(20)->create();
 
     }
 }

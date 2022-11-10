@@ -41,7 +41,6 @@
                 <th scope="col">Temperatura</th>
                 <th scope="col">Humedad</th>
                 <th scope="col">Fecha de Registro</th>
-                <th scope="col">Fecha de Modificación</th>
                 <th scope="col">Acción</th>
             </tr>
 
@@ -55,7 +54,6 @@
                 <td>{{$clima->temperatura}}</td>
                 <td>{{$clima->humedad}}</td>
                 <td>{{$clima->created_at}}</td>
-                <td>{{$clima->updated_at}}</td>
                 <td>
 
                     <form action="{{route('clima.destroy', $clima)}}" method="POST">

@@ -1,3 +1,5 @@
+@include('layouts.navheader2')
+
 @extends('adminlte::page')
 
 @section('title', 'Dashboard')

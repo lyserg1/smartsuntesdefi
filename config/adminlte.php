@@ -352,14 +352,6 @@ return [
             'label_color' => 'success',
 
         ],
-        [
-
-            'text'        => 'Estadisticas',
-            'url'         => 'estadistica',
-            'icon'        => 'fas fa-fw fa-thin fa-chart-bar',
-            'label_color' => 'success',
-
-        ],
         ['header' => 'Configuración de la cuenta'],
         [
             'text' => 'Perfil de Usuario',
