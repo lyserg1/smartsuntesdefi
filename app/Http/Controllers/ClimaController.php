@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Poste;
 
+
 class ClimaController extends Controller
 {
     /**
@@ -17,8 +18,10 @@ class ClimaController extends Controller
      */
     public function index()
     {
-        $climas = Clima::all();
+        /* $climas = Clima::all(); */
 
+        $climas = Clima::paginate(5);
+        $climas = Poste::find(1)->climas()->get();
 
         return view('clima.index', compact('climas'));
     }

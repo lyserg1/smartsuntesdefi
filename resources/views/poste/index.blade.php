@@ -6,6 +6,11 @@
     <h1>Poste Inteligente</h1>
 @stop
 
+@section('css')
+
+
+@endsection
+
 @section('content')
     <p>Poste Inteligentes Registrados</p>
 
@@ -13,6 +18,10 @@
     <a href={{ route('poste.create') }} class="btn btn-primary">Registrar</a>
 
     <p></p>
+
+    <div class="card">
+        <div class="card-body">
+
 
     <table class="table table-dark table-striped">
 
@@ -55,15 +64,29 @@
             @endforeach
         </tbody>
 
+
     </table>
 
+    <p></p>
+
+    <div class="d-flex justify-content-end">
+        {!! $postes->links() !!}
+
+    </div>
+
+
+</div>
+</div>
 
 @endsection
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
+
 @stop
 
 @section('js')
     <script> console.log('Hi!'); </script>
+
+
 @stop

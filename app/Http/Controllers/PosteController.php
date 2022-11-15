@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Poste;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Clima;
 use App\Models\User;
 
 class PosteController extends Controller
@@ -17,7 +18,7 @@ class PosteController extends Controller
     public function index()
     {
 
-        $postes = Poste::all();
+        $postes = Poste::paginate(5);
         return view('poste.index')->with('postes', $postes);
     }
 

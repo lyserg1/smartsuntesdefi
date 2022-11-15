@@ -9,6 +9,9 @@ class Poste extends Model
 {
     use HasFactory;
 
+ /*    protected $table ="postes"; */
+
+
 
     protected $fillable = [
         'direccion', 'region', 'comuna', 'slug', 'estado', 'user_id'
@@ -22,7 +25,7 @@ class Poste extends Model
 
     //relacion de 1 a muchos de poste a climas
     public function climas(){
-        return $this->hasMany(Clima::class);
+        return $this->hasMany(Clima::class, 'poste_id', 'id');
     }
 
 

@@ -10,6 +10,8 @@ class Clima extends Model
 {
     use HasFactory;
 
+    /* protected $table = 'climas';
+ */
     protected $fillable = [
         'temperatura', 'humedad', 'poste_id'
     ];
@@ -29,7 +31,7 @@ class Clima extends Model
 
     //relacion 1 a muchos de poste a clima
     public function postes(){
-        return $this->belongsTo(Poste::class);
+        return $this->belongsTo(Poste::class, 'poste_id', 'id');
     }
 
 }
