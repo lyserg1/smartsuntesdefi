@@ -20,8 +20,16 @@ class ClimaController extends Controller
     {
         /* $climas = Clima::all(); */
 
+        /*  $climas = Poste::find(1)->climas()->get(); */
+
+
+        //De ejemplo
+       /*  $id_poste = Poste::find(1)->id;
+
+        $climas = Clima::where('poste_id',$id_poste)->paginate(5);
+ */
+
         $climas = Clima::paginate(5);
-        $climas = Poste::find(1)->climas()->get();
 
         return view('clima.index', compact('climas'));
     }

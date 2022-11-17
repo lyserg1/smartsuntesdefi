@@ -18,7 +18,10 @@ class PosteController extends Controller
     public function index()
     {
 
-        $postes = Poste::paginate(5);
+        $id_user = auth::user()->id;
+
+
+        $postes = Poste::where('user_id',$id_user)->paginate(5);
         return view('poste.index')->with('postes', $postes);
     }
 

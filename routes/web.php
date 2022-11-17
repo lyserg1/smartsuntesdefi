@@ -59,15 +59,17 @@ Route::get('/contacto', function () {
 
 
  //ESTA RUTA ES LA DEFINITVA
- Route::resource('poste', PosteController::class);
+ Route::resource('poste', PosteController::class)->middleware('auth');
 
- Route::resource('clima', ClimaController::class);
+ Route::resource('clima', ClimaController::class)->middleware('auth');
 
- Route::resource('luz', LuzController::class);
+ Route::resource('luz', LuzController::class)->middleware('auth');
 
- Route::resource('camara', CamaraController::class);
+ Route::resource('camara', CamaraController::class)->middleware('auth');
 
-Route::resource('admin', UserSettingsController::class);
+ Route::resource('ruido', RuidoController::class)->middleware('auth');
+
+Route::resource('admin', UserSettingsController::class)->middleware('auth');
 
 
 //Es una forma de acceder el dashboard yo usare los controller. - analizar
@@ -84,9 +86,9 @@ Route::resource('admin', UserSettingsController::class);
 
 
 
-Route::get('/dash/poste', function (){
+/* Route::get('/dash/poste', function (){
     return view('poste.index');
-});
+}); */
 
 /* Route::get('/dash/poste/create', function () {
     return view('poste.create');

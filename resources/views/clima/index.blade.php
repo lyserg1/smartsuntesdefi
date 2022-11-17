@@ -61,24 +61,26 @@
                 <td>{{$clima->created_at}}</td>
                 <td>
 
-                    <form action="{{route('clima.destroy', $clima)}}" method="POST">
+
                     {{-- <a href="{{ route('poste.edit', $poste) }}" class="btn btn-primary">Editar</a> --}}
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-info">Eliminar</button>
-                    </form>
+
+
+
+                    <a href="" class="btn btn-danger" data-target="#deleteClima-{{ $clima->id }}" data-toggle="modal">Eliminar</a>
+
 
                 </td>
             </tr>
+            @include('clima.modalclima')
             @endforeach
         </tbody>
 
     </table>
 
-    {{-- <div class="d-flex justify-content-end">
+    <div class="d-flex justify-content-end">
         {!! $climas->links() !!}
 
-    </div> --}}
+    </div>
 
 
 @endsection

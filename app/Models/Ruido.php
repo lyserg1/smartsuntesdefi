@@ -16,7 +16,7 @@ class Ruido extends Model
 
     //relacion 1 a muchos inversa de ruido a Poste
     public function postes(){
-        return $this->belongsTo(Poste::class);
+        return $this->belongsTo(Poste::class, 'poste_id', 'id');
     }
 
 
