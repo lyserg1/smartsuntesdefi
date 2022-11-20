@@ -24,8 +24,8 @@ class Camara extends Model
     } */
 
     //Relacion uno a muchos inversa
-    public function poste(){
-        return $this->belongsTo(Poste::class);
+    public function postes(){
+        return $this->belongsTo(Poste::class, 'poste_id', 'id');
     }
 
 

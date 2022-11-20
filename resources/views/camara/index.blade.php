@@ -46,6 +46,9 @@
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Conteo</th>
+                <th scope="col">Region</th>
+                <th scope="col">Comuna</th>
+                <th scope="col">Dirección</th>
                 <th scope="col">Fecha de Registro</th>
             </tr>
 
@@ -58,6 +61,9 @@
                 <th scope="row">{{$camara->id}}</th>
                 <td>{{$camara->name}}</td>
                 <td>{{$camara->conteo}}</td>
+                <td>{{$camara->postes->region}}</td>
+                <td>{{$camara->postes->comuna}}</td>
+                <td>{{$camara->postes->direccion}}</td>
                 <td>{{$camara->created_at}}</td>
                 {{-- <td>
 

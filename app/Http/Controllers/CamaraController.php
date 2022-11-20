@@ -14,8 +14,7 @@ class CamaraController extends Controller
      */
     public function index()
     {
-        $camaras = Camara::all();
-
+        $camaras = Camara::paginate(5);
 
         return view('camara.index', compact('camaras'));
     }
@@ -83,6 +82,6 @@ class CamaraController extends Controller
      */
     public function destroy($id)
     {
-        //
+
     }
 }
