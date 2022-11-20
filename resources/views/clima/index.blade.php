@@ -42,6 +42,7 @@
                 <th scope="col">Humedad</th>
                 <th scope="col">Region</th>
                 <th scope="col">Comuna</th>
+                <th scope="col">Dirección</th>
                 <th scope="col">Fecha de Registro</th>
                 <th scope="col">Acción</th>
             </tr>
@@ -55,9 +56,9 @@
                 <th scope="row">{{$clima->id}}</th>
                 <td>{{$clima->temperatura}}</td>
                 <td>{{$clima->humedad}}</td>
-                {{-- <td>{{$clima->postes->direccion}}</td> --}}
                 <td>{{$clima->postes->region}}</td>
                 <td>{{$clima->postes->comuna}}</td>
+                <td>{{$clima->postes->direccion}}</td>
                 <td>{{$clima->created_at}}</td>
                 <td>
 

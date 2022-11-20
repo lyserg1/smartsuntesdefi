@@ -36,13 +36,13 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
 
         Poste::factory(5)->create();
-        Clima::factory(14)->create();
+       /* Clima::factory(14)->create(); */
         /* Camara::factory(2)->create();
         Imagen::factory(10)->create();
         Region::factory(10)->create();
         Comuna::factory(10)->create();
-        Luz::factory(10)->create();
-        Ruido::factory(10)->create(); */
+        Luz::factory(10)->create(); */
+        Ruido::factory(10)->create();
 
 
     }

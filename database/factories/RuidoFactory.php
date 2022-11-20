@@ -19,10 +19,11 @@ class RuidoFactory extends Factory
     {
 
         $cantidad = $this->faker->unique()->word(20);
+        $descripcion = $this->faker->unique()->word(20);
 
         return [
             'cantidad' => $cantidad,
-            'slug' => Str::slug($cantidad),
+            'descripcion' => $descripcion,
             'poste_id' => '1'
         ];
 

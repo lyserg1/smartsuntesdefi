@@ -19,7 +19,7 @@ return new class extends Migration
 
 
             $table->string('cantidad');
-            $table->string('slug')->nullable();
+            $table->string('descripcion');
 
             $table->unsignedBigInteger('poste_id');
 

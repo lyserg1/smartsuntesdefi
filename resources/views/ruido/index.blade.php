@@ -22,7 +22,7 @@
 
         </div>
 
-        <img src="https://www.mentesliberadas.com/wp-content/uploads/2015/01/ruido-1.jpghttps://www.mentesliberadas.com/wp-content/uploads/2015/01/ruido-1.jpg" class="rounded mx-auto d-block" alt="...">
+        <img src="https://s2.abcstatics.com/media/familia/2019/04/24/ruido-k8LG--620x349@abc.jpg" class="rounded mx-auto d-block" alt="...">
 
 
 
@@ -41,6 +41,7 @@
                 <th scope="col">Cantidad</th>
                 <th scope="col">Region</th>
                 <th scope="col">Comuna</th>
+                <th scope="col">Dirección</th>
                 <th scope="col">Fecha de Registro</th>
                 <th scope="col">Acción</th>
             </tr>
@@ -53,9 +54,10 @@
             <tr>
                 <th scope="row">{{$ruido->id}}</th>
                 <td>{{$ruido->cantidad}}</td>
-                {{-- <td>{{$Ruido->postes->direccion}}</td> --}}
+                <td>{{$ruido->descripcion}}</td>
                 <td>{{$ruido->postes->region}}</td>
                 <td>{{$ruido->postes->comuna}}</td>
+                <td>{{$ruido->postes->direccion}}</td>
                 <td>{{$ruido->created_at}}</td>
                 <td>
 

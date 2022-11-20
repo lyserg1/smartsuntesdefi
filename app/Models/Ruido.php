@@ -11,7 +11,7 @@ class Ruido extends Model
 
 
     protected $fillable = [
-        'cantidad', 'slug', 'poste_id'
+        'cantidad', 'descripcion', 'poste_id'
     ];
 
     //relacion 1 a muchos inversa de ruido a Poste

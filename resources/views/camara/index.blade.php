@@ -19,7 +19,11 @@
           <br><br>
 
           <center>
-          <a href="https://www.youtube.com/watch?v=79tHrF6LPQI">Acceso a Monitoreo de Camara</a>
+         {{--  <a href="https://www.youtube.com/watch?v=79tHrF6LPQI">Acceso a Monitoreo de Camara</a> --}}
+
+         <p>Podras acceder a la camara por medio del programa que utilizamos para conectar con nuestro sistema, el cual envia los datos a nuestra base de datos
+            la cual esta alojada en AWS.
+         </p>
 
           </center>
 
