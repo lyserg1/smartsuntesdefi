@@ -29,7 +29,8 @@
 
           <br><br>
 
-          <p class="card-text">A traves de este link podras acceder al Monitoreo de la camara, da click en el.</p>
+          <p class="card-text">Nuestro poste inteligente captura la cantidades de personas que visualiza la camara, esta la muestra a traves del poste que tiene
+            integrada nuestra camara.</p>
 
 
 
@@ -39,6 +40,7 @@
     </div>
 
 
+    <br>
     <table class="table table-dark table-striped">
 
         <thead>
@@ -80,6 +82,9 @@
         </tbody>
 
     </table>
+
+
+
 
 @stop
 

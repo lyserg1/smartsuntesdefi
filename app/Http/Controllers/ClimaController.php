@@ -16,22 +16,20 @@ class ClimaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($poste)
     {
-        /* $climas = Clima::all(); */
-
-        /*  $climas = Poste::find(1)->climas()->get(); */
 
 
-        //De ejemplo
-       /*  $id_poste = Poste::find(1)->id;
+        /* $climas = Clima::paginate(5);
 
-        $climas = Clima::where('poste_id',$id_poste)->paginate(5);
- */
+        return view('clima.index', compact('climas')); */
 
-        $climas = Clima::paginate(5);
 
-        return view('clima.index', compact('climas'));
+        $climas = Clima::all()->where('poste_id', $poste);
+        $poste = Poste::find($poste);
+        return view('clima.index', compact('climas', 'poste'));
+
+
     }
 
     /**

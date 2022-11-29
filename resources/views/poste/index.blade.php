@@ -32,6 +32,9 @@
                 <th scope="col">Región</th>
                 <th scope="col">Comuna</th>
                 <th scope="col">Estado</th>
+                <th scope="col">Administra los Climas</th>
+                <th scope="col">Administra los Ruidos</th>
+                <th scope="col">Administra las Camaras</th>
                 <th scope="col">Fecha de Registro</th>
                 <th scope="col">Fecha de Modificación</th>
                 <th scope="col">Acción</th>
@@ -48,6 +51,9 @@
                 <td>{{$poste->region}}</td>
                 <td>{{$poste->comuna}}</td>
                 <td>{{$poste->estado}}</td>
+                <td><a href="{{ route('clima.index', $poste)}}" class="btn btn-primary">Administrar</a></td>
+                <td><a href="{{ route('ruido.index', $poste)}}" class="btn btn-primary">Administrar</a></td>
+                <td><a href="{{ route('camara.index', $poste)}}" class="btn btn-primary">Administrar</a></td>
                 <td>{{$poste->created_at}}</td>
                 <td>{{$poste->updated_at}}</td>
                 <td>

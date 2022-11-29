@@ -323,7 +323,7 @@ return [
         [
 
             'text'        => 'Climas',
-            'url'         => 'clima',
+            'url'         => 'climainstruc',
             'icon'        => 'fas fa-fw fa-cloud',
             'label_color' => 'success',
 
@@ -339,7 +339,7 @@ return [
         [
 
             'text'        => 'Camaras',
-            'url'         => 'camara',
+            'url'         => 'camarainstruc',
             'icon'        => 'fas fa-fw fa-camera',
             'label_color' => 'success',
 
@@ -347,7 +347,7 @@ return [
         [
 
             'text'        => 'Ruidos',
-            'url'         => 'ruido',
+            'url'         => 'ruidoinstruc',
             'icon'        => 'fas fa-fw fa-wave-square',
             'label_color' => 'success',
 

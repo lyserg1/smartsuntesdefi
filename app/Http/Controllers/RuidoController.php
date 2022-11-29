@@ -15,11 +15,17 @@ class RuidoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($poste)
     {
-        $ruidos = Ruido::paginate(5);
+        /* $ruidos = Ruido::paginate(5);
 
-        return view('ruido.index', compact('ruidos'));
+        return view('ruido.index', compact('ruidos')); */
+
+
+        $ruidos = Ruido::all()->where('poste_id', $poste);
+        $poste = Poste::find($poste);
+        return view('ruido.index', compact('ruidos', 'poste'));
+
     }
 
     /**

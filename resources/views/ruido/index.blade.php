@@ -16,9 +16,18 @@
     <div class="card text-center">
 
         <div class="card-body">
-          <h5 class="card-title">Datos de Ruidos</h5>
-          <p class="card-text">En esta interfaz podras acceder a visualizar y analizar los datos de Ruidos obtenidos desde nuestro poste inteligente.</p>
+          <h5 class="card-title">Datos de Ruido</h5>
+          <p class="card-text">En esta interfaz entenderas como funciona y analizar los datos de decibeles capturados por los ruidos obtenidos desde nuestro poste inteligente.</p>
           {{-- <a href="#" class="btn btn-primary">Ir a Registros</a> --}}
+
+          <br>
+          <br>
+          <p class="card-text">Una vez que registras un poste en este se veran los datos de ruido que se han capturado a traves de nuestro poste inteligente</p>
+
+          <br>
+
+          <p class="card-text"> La opcion de poder verificar que el poste este registrado, te permite acceder a un boton el cual te permitira la posibilidad de ver que datos de Ruido
+            esten registrados y tambien la posibilidad de eliminarlos </p>
 
         </div>
 
@@ -29,6 +38,7 @@
     </div>
 
     <br>
+
 
 
     <p></p>
@@ -77,11 +87,10 @@
 
     </table>
 
-    <div class="d-flex justify-content-end">
+    {{-- <div class="d-flex justify-content-end">
         {!! $ruidos->links() !!}
 
-    </div>
-
+    </div> --}}
 
 @endsection
 

@@ -17,8 +17,17 @@
 
         <div class="card-body">
           <h5 class="card-title">Datos de Climas</h5>
-          <p class="card-text">En esta interfaz podras acceder a visualizar y analizar los datos climaticos de Temperatura y Humedad obtenidos desde nuestro poste inteligente.</p>
+          <p class="card-text">En esta interfaz entenderas como funciona y analizar los datos climaticos de Temperatura y Humedad obtenidos desde nuestro poste inteligente.</p>
           {{-- <a href="#" class="btn btn-primary">Ir a Registros</a> --}}
+
+          <br>
+          <br>
+          <p class="card-text">Una vez que registras un poste en este se veran los datos de temperatura y humedad que se han capturado a traves de nuestro poste inteligente</p>
+
+          <br>
+
+          <p class="card-text"> La opcion de poder verificar que el poste este registrado, te permite acceder a un boton el cual te permitira la posibilidad de ver que datos de Climas
+            esten registrados y tambien la posibilidad en caso de eliminarlos </p>
 
         </div>
 
@@ -29,7 +38,6 @@
     </div>
 
     <br>
-
 
     <p></p>
 
@@ -78,10 +86,10 @@
 
     </table>
 
-    <div class="d-flex justify-content-end">
+    {{-- <div class="d-flex justify-content-end">
         {!! $climas->links() !!}
 
-    </div>
+    </div> --}}
 
 
 @endsection

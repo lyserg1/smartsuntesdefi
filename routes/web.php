@@ -61,15 +61,54 @@ Route::get('/contacto', function () {
  //ESTA RUTA ES LA DEFINITVA
  Route::resource('poste', PosteController::class)->middleware('auth');
 
- Route::resource('clima', ClimaController::class)->middleware('auth');
+ Route::resource('poste.clima', ClimaController::class)->middleware('auth')->names([
+    'index' => 'clima.index',
+    'create' => 'clima.create',
+    'store' => 'clima.store',
+    'show' => 'clima.show',
+    'edit' => 'clima.edit',
+    'update' => 'clima.update',
+    'destroy' => 'clima.destroy',
+ ])->shallow()->middleware('auth');
 
  Route::resource('luz', LuzController::class)->middleware('auth');
 
- Route::resource('camara', CamaraController::class)->middleware('auth');
+ Route::resource('poste.camara', CamaraController::class)->middleware('auth')->names([
+    'index' => 'camara.index',
+    'create' => 'camara.create',
+    'store' => 'camara.store',
+    'show' => 'camara.show',
+    'edit' => 'camara.edit',
+    'update' => 'camara.update',
+    'destroy' => 'camara.destroy',
+ ])->shallow()->middleware('auth');
 
- Route::resource('ruido', RuidoController::class)->middleware('auth');
+ Route::resource('poste.ruido', RuidoController::class)->middleware('auth')->names([
+    'index' => 'ruido.index',
+    'create' => 'ruido.create',
+    'store' => 'ruido.store',
+    'show' => 'ruido.show',
+    'edit' => 'ruido.edit',
+    'update' => 'ruido.update',
+    'destroy' => 'ruido.destroy',
+ ])->shallow()->middleware('auth');
 
 Route::resource('admin', UserSettingsController::class)->middleware('auth');
+
+
+
+
+//Aqui estan las de instrucciones
+
+
+Route::get('/ruidoinstruc','App\Http\Controllers\RuidoInstrucController@index')->middleware('auth');
+Route::get('/climainstruc','App\Http\Controllers\ClimaInstrucController@index')->middleware('auth');
+Route::get('/camarainstruc','App\Http\Controllers\CamaraInstrucController@index')->middleware('auth');
+
+/* Route::resource('ruidoinstruc', RuidoInstrucController::class)->middleware('auth'); */
+/* Route::resource('climainstruc', ClimaInstrucController::class)->middleware('auth');
+Route::resource('camarainstruc', CamaraInstrucController::class)->middleware('auth'); */
+
 
 
 //Es una forma de acceder el dashboard yo usare los controller. - analizar

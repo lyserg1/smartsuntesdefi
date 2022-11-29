@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Camara;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use App\Models\Poste;
 
 class CamaraController extends Controller
 {
@@ -12,11 +15,13 @@ class CamaraController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($poste)
     {
-        $camaras = Camara::paginate(5);
 
-        return view('camara.index', compact('camaras'));
+        $camaras = Camara::all()->where('poste_id', $poste);
+        $poste = Poste::find($poste);
+        return view('camara.index', compact('camaras', 'poste'));
+
     }
 
     /**
